@@ -301,3 +301,55 @@ export default function LibrasInterpreterPage() {
                     <li>• Relatório pós-evento (opcional)</li>
                   </ul>
                 </div>
+              </div>
+
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
+            className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 md:p-12 text-white text-center"
+          >
+            <div className="max-w-3xl mx-auto">
+              <Star className="h-12 w-12 text-pink-300 mx-auto mb-6" />
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">
+                Garanta a acessibilidade do seu próximo evento
+              </h3>
+              <p className="text-lg text-white/90 mb-8 leading-relaxed">
+                Entre em contato conosco e solicite um orçamento para contratação de intérpretes de Libras. 
+                Nossa equipe está pronta para garantir que sua comunicação seja inclusiva e eficaz.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="tel:(89) 98177-654"
+                  className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center group"
+                >
+                  <Phone className="h-5 w-5 mr-2" />
+                  <span>Ligar Agora</span>
+                  <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
+                
+                <a
+                  href="mailto:contato@janeladelibras.com"
+                  className="bg-pink-500 hover:bg-pink-400 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
+                >
+                  Solicitar Orçamento
+                </a>
+              </div>
+              
+              <div className="mt-8 text-center">
+                <div className="text-sm text-white/80">
+                  📞 (89) 98177-654 | Atendimento: Seg-Sex, 8h às 18h
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  )
+}
